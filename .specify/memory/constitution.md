@@ -1,55 +1,44 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT:
+Version change: N/A -> 1.0.0
+List of modified principles: N/A (initial constitution)
+Added sections: All sections (initial constitution)
+Removed sections: N/A
+Templates requiring updates: N/A (initial constitution)
+Follow-up TODOs: None
+-->
+
+# AI/Spec-Driven Book Creation using Docusaurus, GitHub Pages, Spec-Kit Plus, and Claude Code Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### High Accuracy and Verifiable Sources
+All content must be factually accurate through reliable, verifiable sources. All factual statements must reference credible sources with official documentation preferred. Minimum 40% of technical references must come from official documentation (Docusaurus, GitHub, Spec-Kit Plus, Claude Code, etc.).
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Clear and Structured Writing
+Content must be suitable for beginners and intermediate learners (front-end & AI students) with writing level target of Flesch-Kincaid Grade 8–10 (clear, easy to understand). Use simple citation format with inline links or APA style where applicable.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Technical Reproducibility
+All instructions must be testable in real environments. Code examples must run without modification. Consistency with modern documentation standards (Docusaurus best practices) required.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Transparency and Traceability
+All generated content must be traceable to prompts, specs, and version-controlled edits. This ensures accountability and reproducibility of the content creation process.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Zero Plagiarism Policy
+All content must be original with plagiarism at 0% before final publication. Content must be created through proper attribution and original synthesis of sources.
 
-### [PRINCIPLE_6_NAME]
+### Consistency with Documentation Standards
+All content must maintain consistency with modern documentation standards, particularly Docusaurus best practices, and follow established patterns for structure and presentation.
 
+## Additional Technical Constraints
 
-[PRINCIPLE__DESCRIPTION]
+Technology stack requirements include Docusaurus, GitHub Pages, Spec-Kit Plus, and Claude Code. All code examples must be validated to run in real environments before inclusion.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Content development must follow Spec-Driven Development (SDD) methodology using specs/<feature>/spec.md for requirements, specs/<feature>/plan.md for architecture decisions, and specs/<feature>/tasks.md for testable tasks with cases.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all content creation and development practices. All contributions must verify compliance with these principles. Amendments require proper documentation and approval through the established process.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
