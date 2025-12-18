@@ -1,44 +1,40 @@
-<!-- SYNC IMPACT REPORT:
-Version change: N/A -> 1.0.0
-List of modified principles: N/A (initial constitution)
-Added sections: All sections (initial constitution)
-Removed sections: N/A
-Templates requiring updates: N/A (initial constitution)
-Follow-up TODOs: None
+<!--
+Sync Impact Report:
+- Version change: 0.1.0 → 1.0.0 (Initial constitution for AI/Spec-Driven Book Creation project)
+- Added sections: All principles and sections for the new project constitution
+- Templates requiring updates: None yet (this is the initial version)
+- Follow-up TODOs: RATIFICATION_DATE needs to be determined
 -->
-
-# AI/Spec-Driven Book Creation using Docusaurus, GitHub Pages, Spec-Kit Plus, and Claude Code Constitution
+# AI / Spec-Driven Book Creation using Spec-Kit Plus Constitution
 
 ## Core Principles
 
-### High Accuracy and Verifiable Sources
-All content must be factually accurate through reliable, verifiable sources. All factual statements must reference credible sources with official documentation preferred. Minimum 40% of technical references must come from official documentation (Docusaurus, GitHub, Spec-Kit Plus, Claude Code, etc.).
+### Accuracy through Primary Source Verification
+All factual statements must be verified against original, authoritative sources. Secondary summaries may be used only when primary sources are unavailable and must be clearly identified.
 
-### Clear and Structured Writing
-Content must be suitable for beginners and intermediate learners (front-end & AI students) with writing level target of Flesch-Kincaid Grade 8–10 (clear, easy to understand). Use simple citation format with inline links or APA style where applicable.
+### Clarity for an Academic Audience
+Target audience has a computer science or technical background. Explanations must be precise, unambiguous, and technically sound. Avoid unnecessary simplification that reduces technical correctness.
 
-### Technical Reproducibility
-All instructions must be testable in real environments. Code examples must run without modification. Consistency with modern documentation standards (Docusaurus best practices) required.
+### Reproducibility & Traceability
+Every claim must be traceable to a cited source. Readers must be able to independently verify claims using the provided references.
 
-### Transparency and Traceability
-All generated content must be traceable to prompts, specs, and version-controlled edits. This ensures accountability and reproducibility of the content creation process.
+### Academic Rigor
+Preference is given to peer-reviewed research, standards documents, and official technical documentation. Informal sources (blogs, opinion articles) may only supplement—not replace—rigorous sources.
 
-### Zero Plagiarism Policy
-All content must be original with plagiarism at 0% before final publication. Content must be created through proper attribution and original synthesis of sources.
+### Factual Verification and Citation Standards
+100% of factual claims must be supported by citations. No uncited technical, historical, or statistical claims are allowed. Citation style: APA. In-text citations and reference list are mandatory. Citations must be embedded directly within the content.
 
-### Consistency with Documentation Standards
-All content must maintain consistency with modern documentation standards, particularly Docusaurus best practices, and follow established patterns for structure and presentation.
+### Zero Tolerance Plagiarism and Source Quality
+Zero tolerance for plagiarism. All content must be original or properly quoted and cited. Plagiarism checks must return 0% similarity (excluding references). Minimum 50% of sources must be peer-reviewed (journals, conference papers). Remaining sources may include: Official specifications, Standards bodies (IEEE, ISO, W3C), Reputable institutional publications.
 
-## Additional Technical Constraints
+## Project Constraints and Tooling Requirements
+Total Word Count: 5,000 – 7,000 words. Minimum Sources: 15. Output Format: Primary: Docusaurus site, Exportable: PDF with embedded citations. Tooling Constraints: Spec-Kit Plus governs structure and validation, Claude Code used for assisted authoring, Version control via GitHub.
 
-Technology stack requirements include Docusaurus, GitHub Pages, Spec-Kit Plus, and Claude Code. All code examples must be validated to run in real environments before inclusion.
-
-## Development Workflow
-
-Content development must follow Spec-Driven Development (SDD) methodology using specs/<feature>/spec.md for requirements, specs/<feature>/plan.md for architecture decisions, and specs/<feature>/tasks.md for testable tasks with cases.
+## Success Criteria and Enforcement
+The project is considered complete only when all of the following are met: Verification: All claims are validated against cited sources. Fact-checking review passes without unresolved issues. Integrity: Zero plagiarism detected. Proper attribution for all external ideas and quotations. Compliance: Fully adheres to Spec-Kit Plus workflow and structure. Meets all constraints defined in this constitution. Deployment: Successfully published using Docusaurus. Deployed and accessible via GitHub Pages. Enforcement: Any content, plan, or implementation decisions must comply with this constitution throughout the project lifecycle. The book will be written using Spec-Kit Plus, authored with Claude Code, structured in Docusaurus, and deployed to GitHub Pages.
 
 ## Governance
 
-This constitution governs all content creation and development practices. All contributions must verify compliance with these principles. Amendments require proper documentation and approval through the established process.
+This constitution defines the non-negotiable principles, standards, constraints, and success criteria governing the creation of this book. All planning, writing, tooling, and deployment decisions must comply with this constitution throughout the project lifecycle. All claims must be validated against cited sources. Fact-checking review passes without unresolved issues. Zero plagiarism detected. Proper attribution for all external ideas and quotations. Fully adheres to Spec-Kit Plus workflow and structure. Meets all constraints defined in this constitution. Successfully published using Docusaurus. Deployed and accessible via GitHub Pages.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): Original adoption date needs to be determined | **Last Amended**: 2025-12-17

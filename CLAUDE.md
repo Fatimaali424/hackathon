@@ -209,9 +209,3 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
 
-## Active Technologies
-- Markdown (Docusaurus v3), Python 3.8+ for Isaac ROS examples, C++ for Isaac Sim extensions + NVIDIA Isaac Sim, Isaac ROS, ROS 2 Humble/Iron, Gazebo, Unity (for visualization), Docusaurus v3 (001-isaac-module)
-- Git repository for source content, GitHub Pages for deployment, local files for Isaac Sim assets (001-isaac-module)
-
-## Recent Changes
-- 001-isaac-module: Added Markdown (Docusaurus v3), Python 3.8+ for Isaac ROS examples, C++ for Isaac Sim extensions + NVIDIA Isaac Sim, Isaac ROS, ROS 2 Humble/Iron, Gazebo, Unity (for visualization), Docusaurus v3
