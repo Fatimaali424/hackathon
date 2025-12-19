@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://physical-ai-book.github.io',
+  url: 'https://fatimaali424.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/humanoid-robot-book/',
+  baseUrl: '/hackathon/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'physical-ai-book', // Usually your GitHub org/user name.
-  projectName: 'humanoid-robot-book', // Usually your repo name.
+  organizationName: 'Fatimaali424', // Usually your GitHub org/user name.
+  projectName: 'hackathon', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -89,7 +89,7 @@ const config = {
             label: 'Book Content',
           },
           {
-            href: 'https://github.com/physical-ai-book/humanoid-robot-book',
+            href: 'https://github.com/Fatimaali424/hackathon',
             label: 'GitHub',
             position: 'right',
           },
@@ -125,7 +125,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/physical-ai-book/humanoid-robot-book',
+                href: 'https://github.com/Fatimaali424/hackathon',
               },
               {
                 label: 'Docusaurus',
