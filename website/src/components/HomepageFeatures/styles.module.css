@@ -1,11 +1,37 @@
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background-color: var(--ifm-background-color);
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.feature-card {
+  background: var(--ifm-card-background-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  color: var(--ifm-color-secondary);
+  line-height: 1.6;
 }

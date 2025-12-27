@@ -86,11 +86,22 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Book Content',
+            label: 'Book Chapters',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Quick Start',
           },
           {
             href: 'https://github.com/Fatimaali424/hackathon',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/Fatimaali424/hackathon/issues',
+            label: 'Issues',
             position: 'right',
           },
         ],
