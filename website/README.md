@@ -1,6 +1,6 @@
-# Website
+# Physical AI & Humanoid Robotics Book
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator. It hosts the comprehensive guide on Physical AI and Humanoid Robotics.
 
 ## Installation
 
@@ -23,6 +23,26 @@ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Translation
+
+The book can be translated into multiple languages using the built-in translation system:
+
+```bash
+# Translate to Spanish
+yarn run translate:es
+
+# Translate to French
+yarn run translate:fr
+
+# Translate to German
+yarn run translate:de
+
+# Translate to any language
+node scripts/advanced-translate-book.js <language-code> [service]
+```
+
+For more information about translation capabilities, see [scripts/TRANSLATION_README.md](scripts/TRANSLATION_README.md)
 
 ## Deployment
 
