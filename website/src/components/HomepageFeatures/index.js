@@ -4,32 +4,33 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Embodied Intelligence',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Explore the principles of physical AI where intelligence emerges through
+        interaction with the real world, enabling robots to understand and
+        navigate complex environments.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Humanoid Robotics',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn about the design, control, and perception challenges specific to
+        humanoid robots, including balance, locomotion, and human-robot interaction.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Real-World Applications',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Discover practical implementations of humanoid robots in assistive care,
+        industrial settings, and research applications with real-world case studies.
       </>
     ),
   },
@@ -38,12 +39,14 @@ const FeatureList = [
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles['feature-card']}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+        <div className="text--center padding-horiz--md">
+          <Heading as="h3" className={styles['feature-title']}>{title}</Heading>
+          <p className={styles['feature-description']}>{description}</p>
+        </div>
       </div>
     </div>
   );
