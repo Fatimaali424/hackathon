@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-module-4/hardware" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Module 4: Hardware Specifications for Vision-Language-Action Systems | Physical AI &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://fatimaali424.github.io/hackathon/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://fatimaali424.github.io/hackathon/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://fatimaali424.github.io/hackathon/docs/module-4/hardware"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Module 4: Hardware Specifications for Vision-Language-Action Systems | Physical AI &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/hackathon/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://fatimaali424.github.io/hackathon/docs/module-4/hardware"><link data-rh="true" rel="alternate" href="https://fatimaali424.github.io/hackathon/docs/module-4/hardware" hreflang="en"><link data-rh="true" rel="alternate" href="https://fatimaali424.github.io/hackathon/docs/module-4/hardware" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Module 4: Hardware Specifications for Vision-Language-Action Systems","item":"https://fatimaali424.github.io/hackathon/docs/module-4/hardware"}]}</script><link rel="stylesheet" href="/hackathon/assets/css/styles.67674623.css">
+<script src="/hackathon/assets/js/runtime~main.a07413b9.js" defer="defer"></script>
+<script src="/hackathon/assets/js/main.a4d761ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/hackathon/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/hackathon/"><div class="navbar__logo"><img src="/hackathon/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/hackathon/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/hackathon/docs/intro">Book Chapters</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/hackathon/docs/intro">Quick Start</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Fatimaali424/hackathon" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/Fatimaali424/hackathon/issues" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Issues<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/hackathon/docs/intro"><span title="📚 Introduction" class="categoryLinkLabel_W154">📚 Introduction</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/intro"><span title="Physical AI &amp; Humanoid Robotics" class="linkLabel_WmDU">Physical AI &amp; Humanoid Robotics</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" href="/hackathon/docs/module-1/"><span title="🔌 Module 1: The Robotic Nervous System (ROS 2)" class="categoryLinkLabel_W154">🔌 Module 1: The Robotic Nervous System (ROS 2)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-1/"><span title="Module 1: The Robotic Nervous System (ROS 2)" class="linkLabel_WmDU">Module 1: The Robotic Nervous System (ROS 2)</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-1/ros2-fundamentals"><span title="ROS 2 Fundamentals" class="linkLabel_WmDU">ROS 2 Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-1/ros2-architecture"><span title="ROS 2 Architecture" class="linkLabel_WmDU">ROS 2 Architecture</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-1/ros2-integration"><span title="ROS 2 Integration" class="linkLabel_WmDU">ROS 2 Integration</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/hackathon/docs/module-1/lab-1-publisher-subscriber"><span title="Labs" class="categoryLinkLabel_W154">Labs</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-1/assignment"><span title="Module 1 Assignment: ROS 2 Fundamentals and System Integration" class="linkLabel_WmDU">Module 1 Assignment: ROS 2 Fundamentals and System Integration</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/hackathon/docs/module-2/"><span title="🔄 Module 2: The Digital Twin (Gazebo &amp; Unity)" class="categoryLinkLabel_W154">🔄 Module 2: The Digital Twin (Gazebo &amp; Unity)</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/hackathon/docs/module-3/"><span title="🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac)" class="categoryLinkLabel_W154">🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac)</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/hackathon/docs/module-4/"><span title="👁️ Module 4: Vision-Language-Action (VLA)" class="categoryLinkLabel_W154">👁️ Module 4: Vision-Language-Action (VLA)</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-4/"><span title="Module 4: Vision-Language-Action (VLA)" class="linkLabel_WmDU">Module 4: Vision-Language-Action (VLA)</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-4/vision-language"><span title="Vision-Language Integration" class="linkLabel_WmDU">Vision-Language Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-4/nlp-robotics"><span title="Natural Language Processing for Robotics" class="linkLabel_WmDU">Natural Language Processing for Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-4/human-robot-interaction"><span title="Human-Robot Interaction" class="linkLabel_WmDU">Human-Robot Interaction</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/hackathon/docs/module-4/lab-10-vision-language"><span title="Labs" class="categoryLinkLabel_W154">Labs</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/hackathon/docs/module-4/assignment"><span title="Module 4 Assignment: Vision-Language-Action System Implementation" class="linkLabel_WmDU">Module 4 Assignment: Vision-Language-Action System Implementation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/hackathon/docs/module-4/hardware"><span title="Module 4: Hardware Specifications for Vision-Language-Action Systems" class="linkLabel_WmDU">Module 4: Hardware Specifications for Vision-Language-Action Systems</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/hackathon/docs/capstone/"><span title="🏆 Capstone: The Autonomous Humanoid" class="categoryLinkLabel_W154">🏆 Capstone: The Autonomous Humanoid</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/hackathon/docs/weekly-roadmap"><span title="📚 Reference Materials" class="categoryLinkLabel_W154">📚 Reference Materials</span></a></div></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/hackathon/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">👁️ Module 4: Vision-Language-Action (VLA)</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Module 4: Hardware Specifications for Vision-Language-Action Systems</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Module 4: Hardware Specifications for Vision-Language-Action Systems</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>This document specifies the hardware requirements and configurations needed for implementing Vision-Language-Action (VLA) systems. The focus is on edge computing platforms optimized for multimodal AI processing, with particular attention to the integration of visual perception, natural language processing, and real-time action execution.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="primary-hardware-platform-nvidia-jetson-for-vla-systems">Primary Hardware Platform: NVIDIA Jetson for VLA Systems<a href="#primary-hardware-platform-nvidia-jetson-for-vla-systems" class="hash-link" aria-label="Direct link to Primary Hardware Platform: NVIDIA Jetson for VLA Systems" title="Direct link to Primary Hardware Platform: NVIDIA Jetson for VLA Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="jetson-orin-series-for-vla-applications">Jetson Orin Series for VLA Applications<a href="#jetson-orin-series-for-vla-applications" class="hash-link" aria-label="Direct link to Jetson Orin Series for VLA Applications" title="Direct link to Jetson Orin Series for VLA Applications" translate="no">​</a></h3>
+<table><thead><tr><th>Model</th><th>AI Performance</th><th>GPU</th><th>CPU</th><th>Memory</th><th>Power</th><th>VLA Use Case</th></tr></thead><tbody><tr><td>Jetson Orin AGX</td><td>275 TOPS</td><td>2048-core NVIDIA Ampere</td><td>12-core ARM v8.2 @ 2.2 GHz</td><td>32GB LPDDR5</td><td>15-60W</td><td>Complex VLA systems, multiple sensors</td></tr><tr><td>Jetson Orin NX</td><td>100 TOPS</td><td>1024-core NVIDIA Ampere</td><td>8-core ARM v8.2 @ 2.0 GHz</td><td>16GB LPDDR5</td><td>15-40W</td><td>Balanced VLA applications</td></tr><tr><td>Jetson Orin Nano</td><td>40 TOPS</td><td>512-core NVIDIA Ampere</td><td>4-core ARM v8.2 @ 1.5 GHz</td><td>4-8GB LPDDR4x</td><td>7-25W</td><td>Entry-level VLA systems</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-vla-configurations">Recommended VLA Configurations<a href="#recommended-vla-configurations" class="hash-link" aria-label="Direct link to Recommended VLA Configurations" title="Direct link to Recommended VLA Configurations" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="researchdevelopment-vla-setup">Research/Development VLA Setup<a href="#researchdevelopment-vla-setup" class="hash-link" aria-label="Direct link to Research/Development VLA Setup" title="Direct link to Research/Development VLA Setup" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Platform</strong>: Jetson Orin AGX Developer Kit</li>
+<li class=""><strong>Memory</strong>: 32GB LPDDR5</li>
+<li class=""><strong>Storage</strong>: 64GB+ microSD card or eMMC</li>
+<li class=""><strong>Power</strong>: Official power adapter (19V/6.32A)</li>
+<li class=""><strong>Cooling</strong>: Active cooling solution (fan or heat sink)</li>
+<li class=""><strong>Connectivity</strong>: Ethernet for reliable communication</li>
+<li class=""><strong>Additional</strong>: Multiple camera interfaces, GPIO expansion</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="educational-vla-setup">Educational VLA Setup<a href="#educational-vla-setup" class="hash-link" aria-label="Direct link to Educational VLA Setup" title="Direct link to Educational VLA Setup" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Platform</strong>: Jetson Orin NX Developer Kit</li>
+<li class=""><strong>Memory</strong>: 16GB LPDDR5</li>
+<li class=""><strong>Storage</strong>: 32GB+ microSD card</li>
+<li class=""><strong>Power</strong>: 19V/3.42A adapter</li>
+<li class=""><strong>Cooling</strong>: Passive cooling with heat spreader</li>
+<li class=""><strong>Connectivity</strong>: Wi-Fi + Ethernet</li>
+<li class=""><strong>Sensors</strong>: Basic camera and microphone setup</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="production-vla-deployment-setup">Production VLA Deployment Setup<a href="#production-vla-deployment-setup" class="hash-link" aria-label="Direct link to Production VLA Deployment Setup" title="Direct link to Production VLA Deployment Setup" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Platform</strong>: Jetson Orin AGX (suggested for complex VLA tasks)</li>
+<li class=""><strong>Form Factor</strong>: Compact carrier board design</li>
+<li class=""><strong>Storage</strong>: eMMC for reliability</li>
+<li class=""><strong>Power</strong>: Efficient power management system</li>
+<li class=""><strong>Environmental</strong>: Ruggedized enclosure as needed</li>
+<li class=""><strong>Redundancy</strong>: Backup power and communication systems</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-system-hardware-requirements">Vision System Hardware Requirements<a href="#vision-system-hardware-requirements" class="hash-link" aria-label="Direct link to Vision System Hardware Requirements" title="Direct link to Vision System Hardware Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="camera-systems-for-vla">Camera Systems for VLA<a href="#camera-systems-for-vla" class="hash-link" aria-label="Direct link to Camera Systems for VLA" title="Direct link to Camera Systems for VLA" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rgb-d-cameras-for-visual-grounding">RGB-D Cameras for Visual Grounding<a href="#rgb-d-cameras-for-visual-grounding" class="hash-link" aria-label="Direct link to RGB-D Cameras for Visual Grounding" title="Direct link to RGB-D Cameras for Visual Grounding" translate="no">​</a></h4>
+<ul>
+<li class="">
+<p><strong>Intel RealSense D455/D435i</strong>: Recommended for VLA applications</p>
+<ul>
+<li class="">Depth accuracy: ±2% at 1m</li>
+<li class="">RGB resolution: Up to 1920×1080</li>
+<li class="">Depth resolution: Up to 1280×720</li>
+<li class="">Operating range: 0.26m to 9m</li>
+<li class="">Interface: USB 3.0 Type-C</li>
+<li class=""><strong>VLA Benefits</strong>: Enables 3D scene understanding and spatial grounding</li>
+</ul>
+</li>
+<li class="">
+<p><strong>StereoLabs ZED 2i</strong>: Alternative for outdoor VLA applications</p>
+<ul>
+<li class="">Resolution: 2208×1242 @ 60 FPS</li>
+<li class="">Operating range: 0.3m to 40m</li>
+<li class="">IMU integration: Built-in 9-axis IMU</li>
+<li class="">Interface: USB 3.0 Type-C</li>
+<li class=""><strong>VLA Benefits</strong>: Outdoor capability with robust tracking</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-resolution-cameras-for-detailed-perception">High-Resolution Cameras for Detailed Perception<a href="#high-resolution-cameras-for-detailed-perception" class="hash-link" aria-label="Direct link to High-Resolution Cameras for Detailed Perception" title="Direct link to High-Resolution Cameras for Detailed Perception" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>FLIR Blackfly S</strong>: Industrial-grade for precision VLA<!-- -->
+<ul>
+<li class="">Resolution: Up to 12MP</li>
+<li class="">Frame rates: Up to 100+ FPS</li>
+<li class="">Global shutter: Eliminates rolling shutter distortion</li>
+<li class="">Interface: GigE Vision</li>
+<li class=""><strong>VLA Benefits</strong>: High-precision object recognition and tracking</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-camera-configurations">Multi-Camera Configurations<a href="#multi-camera-configurations" class="hash-link" aria-label="Direct link to Multi-Camera Configurations" title="Direct link to Multi-Camera Configurations" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="stereo-vision-setup">Stereo Vision Setup<a href="#stereo-vision-setup" class="hash-link" aria-label="Direct link to Stereo Vision Setup" title="Direct link to Stereo Vision Setup" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Baseline Distance</strong>: 10-30cm for optimal depth estimation</li>
+<li class=""><strong>Synchronization</strong>: Hardware triggering for temporal alignment</li>
+<li class=""><strong>Calibration</strong>: Factory-calibrated or field-calibrated</li>
+<li class=""><strong>VLA Application</strong>: Enhanced 3D scene understanding and spatial reasoning</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="360-degree-vision-system">360-Degree Vision System<a href="#360-degree-vision-system" class="hash-link" aria-label="Direct link to 360-Degree Vision System" title="Direct link to 360-Degree Vision System" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Number of Cameras</strong>: 4-6 cameras for full coverage</li>
+<li class=""><strong>Resolution</strong>: 1280×720 minimum per camera</li>
+<li class=""><strong>Overlap</strong>: 20-30% overlap for stitching</li>
+<li class=""><strong>VLA Application</strong>: Omnidirectional scene awareness and grounding</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="audio-hardware-for-language-processing">Audio Hardware for Language Processing<a href="#audio-hardware-for-language-processing" class="hash-link" aria-label="Direct link to Audio Hardware for Language Processing" title="Direct link to Audio Hardware for Language Processing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="microphone-arrays-for-voice-commands">Microphone Arrays for Voice Commands<a href="#microphone-arrays-for-voice-commands" class="hash-link" aria-label="Direct link to Microphone Arrays for Voice Commands" title="Direct link to Microphone Arrays for Voice Commands" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="usb-microphone-arrays">USB Microphone Arrays<a href="#usb-microphone-arrays" class="hash-link" aria-label="Direct link to USB Microphone Arrays" title="Direct link to USB Microphone Arrays" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>ReSpeaker 4-Mic Array</strong>: For voice command processing<!-- -->
+<ul>
+<li class="">Microphones: 4 microphones in linear array</li>
+<li class="">Beamforming: Hardware beamforming for noise reduction</li>
+<li class="">Interface: USB 2.0</li>
+<li class=""><strong>VLA Benefits</strong>: Clear voice command acquisition in noisy environments</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="professional-audio-interfaces">Professional Audio Interfaces<a href="#professional-audio-interfaces" class="hash-link" aria-label="Direct link to Professional Audio Interfaces" title="Direct link to Professional Audio Interfaces" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Focusrite Scarlett Solo</strong>: For high-quality audio input<!-- -->
+<ul>
+<li class="">Sample Rate: Up to 192kHz</li>
+<li class="">Bit Depth: 24-bit</li>
+<li class="">Interface: USB-C</li>
+<li class=""><strong>VLA Benefits</strong>: High-fidelity audio for advanced speech recognition</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="speaker-systems-for-voice-output">Speaker Systems for Voice Output<a href="#speaker-systems-for-voice-output" class="hash-link" aria-label="Direct link to Speaker Systems for Voice Output" title="Direct link to Speaker Systems for Voice Output" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="smart-speaker-integration">Smart Speaker Integration<a href="#smart-speaker-integration" class="hash-link" aria-label="Direct link to Smart Speaker Integration" title="Direct link to Smart Speaker Integration" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Integrated Speakers</strong>: For robot voice output<!-- -->
+<ul>
+<li class="">Power: 2-5W per channel</li>
+<li class="">Impedance: 4-8 Ohms</li>
+<li class=""><strong>VLA Benefits</strong>: Natural voice interaction with users</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="compute-architecture-for-vla-workloads">Compute Architecture for VLA Workloads<a href="#compute-architecture-for-vla-workloads" class="hash-link" aria-label="Direct link to Compute Architecture for VLA Workloads" title="Direct link to Compute Architecture for VLA Workloads" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gpu-acceleration-for-multimodal-processing">GPU Acceleration for Multimodal Processing<a href="#gpu-acceleration-for-multimodal-processing" class="hash-link" aria-label="Direct link to GPU Acceleration for Multimodal Processing" title="Direct link to GPU Acceleration for Multimodal Processing" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="tensor-cores-for-vla-operations">Tensor Cores for VLA Operations<a href="#tensor-cores-for-vla-operations" class="hash-link" aria-label="Direct link to Tensor Cores for VLA Operations" title="Direct link to Tensor Cores for VLA Operations" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Accelerate multimodal matrix operations</li>
+<li class=""><strong>Precision</strong>: FP16, INT8, and INT4 operations</li>
+<li class=""><strong>Performance</strong>: Up to 10x speedup for VLA inference</li>
+<li class=""><strong>Isaac Integration</strong>: Optimized for Isaac ROS VLA packages</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="deep-learning-accelerators-dla">Deep Learning Accelerators (DLA)<a href="#deep-learning-accelerators-dla" class="hash-link" aria-label="Direct link to Deep Learning Accelerators (DLA)" title="Direct link to Deep Learning Accelerators (DLA)" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Purpose</strong>: Dedicated hardware for VLA inference</li>
+<li class=""><strong>Efficiency</strong>: Lower power consumption than GPU for inference</li>
+<li class=""><strong>Precision</strong>: INT8 and FP16 optimized</li>
+<li class=""><strong>Use Case</strong>: Real-time VLA applications with power constraints</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="memory-architecture-for-vla">Memory Architecture for VLA<a href="#memory-architecture-for-vla" class="hash-link" aria-label="Direct link to Memory Architecture for VLA" title="Direct link to Memory Architecture for VLA" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="lpddr5-specifications-for-multimodal-data">LPDDR5 Specifications for Multimodal Data<a href="#lpddr5-specifications-for-multimodal-data" class="hash-link" aria-label="Direct link to LPDDR5 Specifications for Multimodal Data" title="Direct link to LPDDR5 Specifications for Multimodal Data" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Bandwidth</strong>: Up to 204.8 GB/s (Orin AGX)</li>
+<li class=""><strong>Latency</strong>: Optimized for multimodal AI workloads</li>
+<li class=""><strong>Power Efficiency</strong>: Lower power than DDR4</li>
+<li class=""><strong>Capacity</strong>: Up to 32GB on Orin AGX</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="memory-allocation-strategy-for-vla">Memory Allocation Strategy for VLA<a href="#memory-allocation-strategy-for-vla" class="hash-link" aria-label="Direct link to Memory Allocation Strategy for VLA" title="Direct link to Memory Allocation Strategy for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>System Memory</strong>: 40-50% for OS and applications</li>
+<li class=""><strong>GPU Memory</strong>: 35-45% for VLA models and buffers</li>
+<li class=""><strong>Reserved</strong>: 10-15% for real-time VLA operations</li>
+<li class=""><strong>Cache</strong>: 5-10% for multimodal data caching</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-specific-hardware-integration">VLA-Specific Hardware Integration<a href="#vla-specific-hardware-integration" class="hash-link" aria-label="Direct link to VLA-Specific Hardware Integration" title="Direct link to VLA-Specific Hardware Integration" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multimodal-sensor-fusion-hardware">Multimodal Sensor Fusion Hardware<a href="#multimodal-sensor-fusion-hardware" class="hash-link" aria-label="Direct link to Multimodal Sensor Fusion Hardware" title="Direct link to Multimodal Sensor Fusion Hardware" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="synchronization-hardware">Synchronization Hardware<a href="#synchronization-hardware" class="hash-link" aria-label="Direct link to Synchronization Hardware" title="Direct link to Synchronization Hardware" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Hardware Triggering</strong>: For precise multimodal alignment</li>
+<li class=""><strong>Real-time Clocks</strong>: Synchronized across all sensors</li>
+<li class=""><strong>Sync Protocols</strong>: PTP (Precision Time Protocol) support</li>
+<li class=""><strong>VLA Benefit</strong>: Accurate temporal grounding of language in visual context</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="fpga-acceleration">FPGA Acceleration<a href="#fpga-acceleration" class="hash-link" aria-label="Direct link to FPGA Acceleration" title="Direct link to FPGA Acceleration" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Custom Processing</strong>: For specific VLA algorithms</li>
+<li class=""><strong>Low Latency</strong>: Hardware-level processing</li>
+<li class=""><strong>Power Efficiency</strong>: Custom logic for specific tasks</li>
+<li class=""><strong>VLA Application</strong>: Real-time sensor fusion and preprocessing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="specialized-vla-processors">Specialized VLA Processors<a href="#specialized-vla-processors" class="hash-link" aria-label="Direct link to Specialized VLA Processors" title="Direct link to Specialized VLA Processors" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vision-processing-units-vpus">Vision Processing Units (VPUs)<a href="#vision-processing-units-vpus" class="hash-link" aria-label="Direct link to Vision Processing Units (VPUs)" title="Direct link to Vision Processing Units (VPUs)" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Intel Movidius</strong>: For vision preprocessing</li>
+<li class=""><strong>Google Coral</strong>: For edge TPU acceleration</li>
+<li class=""><strong>VLA Application</strong>: Offload vision processing for language focus</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-and-thermal-management-for-vla-systems">Power and Thermal Management for VLA Systems<a href="#power-and-thermal-management-for-vla-systems" class="hash-link" aria-label="Direct link to Power and Thermal Management for VLA Systems" title="Direct link to Power and Thermal Management for VLA Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-requirements-for-multimodal-processing">Power Requirements for Multimodal Processing<a href="#power-requirements-for-multimodal-processing" class="hash-link" aria-label="Direct link to Power Requirements for Multimodal Processing" title="Direct link to Power Requirements for Multimodal Processing" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="typical-power-consumption-by-vla-component">Typical Power Consumption by VLA Component<a href="#typical-power-consumption-by-vla-component" class="hash-link" aria-label="Direct link to Typical Power Consumption by VLA Component" title="Direct link to Typical Power Consumption by VLA Component" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Jetson Module</strong>: 15-60W (varies by model and VLA load)</li>
+<li class=""><strong>Cameras</strong>: 2-5W each (higher for RGB-D cameras)</li>
+<li class=""><strong>Microphones</strong>: 0.5-1W for arrays</li>
+<li class=""><strong>Speakers</strong>: 2-10W for output</li>
+<li class=""><strong>Networking</strong>: 2-5W for communication</li>
+<li class=""><strong>Storage</strong>: 1-3W for high-performance storage</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-power-budgeting">VLA Power Budgeting<a href="#vla-power-budgeting" class="hash-link" aria-label="Direct link to VLA Power Budgeting" title="Direct link to VLA Power Budgeting" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Mobile Robots</strong>: 100-300W total system (VLA-intensive)</li>
+<li class=""><strong>Stationary Systems</strong>: 50-150W typical VLA workload</li>
+<li class=""><strong>Battery Systems</strong>: Account for 25-35% overhead for VLA efficiency</li>
+<li class=""><strong>Peak Loads</strong>: Design for 200% of average VLA consumption</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thermal-design-for-vla-applications">Thermal Design for VLA Applications<a href="#thermal-design-for-vla-applications" class="hash-link" aria-label="Direct link to Thermal Design for VLA Applications" title="Direct link to Thermal Design for VLA Applications" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="active-cooling-requirements-for-vla">Active Cooling Requirements for VLA<a href="#active-cooling-requirements-for-vla" class="hash-link" aria-label="Direct link to Active Cooling Requirements for VLA" title="Direct link to Active Cooling Requirements for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Orin AGX</strong>: Required for sustained VLA operation</li>
+<li class=""><strong>Orin NX</strong>: Recommended for intensive multimodal workloads</li>
+<li class=""><strong>Orin Nano</strong>: May use passive cooling for light VLA workloads</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-thermal-management-components">VLA Thermal Management Components<a href="#vla-thermal-management-components" class="hash-link" aria-label="Direct link to VLA Thermal Management Components" title="Direct link to VLA Thermal Management Components" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Heat Sinks</strong>: Direct contact with SoC during VLA processing</li>
+<li class=""><strong>Fans</strong>: 40mm or 60mm depending on VLA heat generation</li>
+<li class=""><strong>Thermal Interface</strong>: Phase-change materials for VLA components</li>
+<li class=""><strong>Airflow</strong>: Designed for consistent VLA component cooling</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="connectivity-and-io-for-vla-systems">Connectivity and I/O for VLA Systems<a href="#connectivity-and-io-for-vla-systems" class="hash-link" aria-label="Direct link to Connectivity and I/O for VLA Systems" title="Direct link to Connectivity and I/O for VLA Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-speed-interfaces-for-multimodal-data">High-Speed Interfaces for Multimodal Data<a href="#high-speed-interfaces-for-multimodal-data" class="hash-link" aria-label="Direct link to High-Speed Interfaces for Multimodal Data" title="Direct link to High-Speed Interfaces for Multimodal Data" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-data-interfaces">VLA Data Interfaces<a href="#vla-data-interfaces" class="hash-link" aria-label="Direct link to VLA Data Interfaces" title="Direct link to VLA Data Interfaces" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>USB 3.0/3.1</strong>: For camera and microphone connections</li>
+<li class=""><strong>Gigabit Ethernet</strong>: For networking and communication</li>
+<li class=""><strong>PCIe Gen4 x4</strong>: For high-speed VLA expansion (where available)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="robot-communication-for-vla">Robot Communication for VLA<a href="#robot-communication-for-vla" class="hash-link" aria-label="Direct link to Robot Communication for VLA" title="Direct link to Robot Communication for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>CAN Bus</strong>: For motor controllers and low-level devices</li>
+<li class=""><strong>UART</strong>: For custom sensors and actuators</li>
+<li class=""><strong>I2C/SPI</strong>: For low-speed VLA peripherals</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wireless-connectivity-for-vla">Wireless Connectivity for VLA<a href="#wireless-connectivity-for-vla" class="hash-link" aria-label="Direct link to Wireless Connectivity for VLA" title="Direct link to Wireless Connectivity for VLA" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wi-fi-6-80211ax-for-vla-communication">Wi-Fi 6 (802.11ax) for VLA Communication<a href="#wi-fi-6-80211ax-for-vla-communication" class="hash-link" aria-label="Direct link to Wi-Fi 6 (802.11ax) for VLA Communication" title="Direct link to Wi-Fi 6 (802.11ax) for VLA Communication" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Throughput</strong>: Up to 2.4 Gbps</li>
+<li class=""><strong>Latency</strong>: 10-20ms typical</li>
+<li class=""><strong>Range</strong>: 50-100m indoor</li>
+<li class=""><strong>VLA Use Case</strong>: Local networking and command transmission</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="bluetooth-for-vla-accessories">Bluetooth for VLA Accessories<a href="#bluetooth-for-vla-accessories" class="hash-link" aria-label="Direct link to Bluetooth for VLA Accessories" title="Direct link to Bluetooth for VLA Accessories" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Audio</strong>: For microphone and speaker connections</li>
+<li class=""><strong>Low Power</strong>: For peripheral sensors</li>
+<li class=""><strong>Range</strong>: 10-30m depending on class</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-system-integration-guidelines">VLA System Integration Guidelines<a href="#vla-system-integration-guidelines" class="hash-link" aria-label="Direct link to VLA System Integration Guidelines" title="Direct link to VLA System Integration Guidelines" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="synchronization-requirements-for-multimodal-operation">Synchronization Requirements for Multimodal Operation<a href="#synchronization-requirements-for-multimodal-operation" class="hash-link" aria-label="Direct link to Synchronization Requirements for Multimodal Operation" title="Direct link to Synchronization Requirements for Multimodal Operation" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-synchronization-for-vla">Hardware Synchronization for VLA<a href="#hardware-synchronization-for-vla" class="hash-link" aria-label="Direct link to Hardware Synchronization for VLA" title="Direct link to Hardware Synchronization for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Trigger Inputs</strong>: For camera and sensor synchronization</li>
+<li class=""><strong>Clock Distribution</strong>: For precise multimodal timing</li>
+<li class=""><strong>Frame Sync</strong>: For multi-camera VLA systems</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="software-synchronization-for-vla">Software Synchronization for VLA<a href="#software-synchronization-for-vla" class="hash-link" aria-label="Direct link to Software Synchronization for VLA" title="Direct link to Software Synchronization for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Timestamping</strong>: Hardware-accurate timestamps</li>
+<li class=""><strong>Message Filters</strong>: For multimodal sensor fusion</li>
+<li class=""><strong>Buffer Management</strong>: For temporal VLA alignment</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mounting-and-positioning-for-vla">Mounting and Positioning for VLA<a href="#mounting-and-positioning-for-vla" class="hash-link" aria-label="Direct link to Mounting and Positioning for VLA" title="Direct link to Mounting and Positioning for VLA" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="camera-mounting-for-visual-grounding">Camera Mounting for Visual Grounding<a href="#camera-mounting-for-visual-grounding" class="hash-link" aria-label="Direct link to Camera Mounting for Visual Grounding" title="Direct link to Camera Mounting for Visual Grounding" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Rigidity</strong>: Minimize vibration and movement</li>
+<li class=""><strong>Field of View</strong>: Avoid robot body in view</li>
+<li class=""><strong>Protection</strong>: Consider environmental factors</li>
+<li class=""><strong>Calibration</strong>: Easy access for VLA recalibration</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="microphone-positioning-for-voice-commands">Microphone Positioning for Voice Commands<a href="#microphone-positioning-for-voice-commands" class="hash-link" aria-label="Direct link to Microphone Positioning for Voice Commands" title="Direct link to Microphone Positioning for Voice Commands" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Accessibility</strong>: Clear acoustic path to users</li>
+<li class=""><strong>Noise Reduction</strong>: Away from mechanical noise sources</li>
+<li class=""><strong>Array Configuration</strong>: Optimized for beamforming</li>
+<li class=""><strong>VLA Integration</strong>: Aligned with visual field of view</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="environmental-considerations-for-vla-systems">Environmental Considerations for VLA Systems<a href="#environmental-considerations-for-vla-systems" class="hash-link" aria-label="Direct link to Environmental Considerations for VLA Systems" title="Direct link to Environmental Considerations for VLA Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operating-conditions-for-multimodal-hardware">Operating Conditions for Multimodal Hardware<a href="#operating-conditions-for-multimodal-hardware" class="hash-link" aria-label="Direct link to Operating Conditions for Multimodal Hardware" title="Direct link to Operating Conditions for Multimodal Hardware" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="temperature-range-for-vla-components">Temperature Range for VLA Components<a href="#temperature-range-for-vla-components" class="hash-link" aria-label="Direct link to Temperature Range for VLA Components" title="Direct link to Temperature Range for VLA Components" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Commercial</strong>: 0°C to +50°C</li>
+<li class=""><strong>Industrial</strong>: -10°C to +70°C (with proper cooling)</li>
+<li class=""><strong>Storage</strong>: -20°C to +85°C</li>
+<li class=""><strong>Thermal Shutdown</strong>: Typically at 95°C for VLA systems</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="environmental-protection-for-vla">Environmental Protection for VLA<a href="#environmental-protection-for-vla" class="hash-link" aria-label="Direct link to Environmental Protection for VLA" title="Direct link to Environmental Protection for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>IP Rating</strong>: IP54 minimum for indoor, IP65 for outdoor VLA</li>
+<li class=""><strong>Humidity</strong>: 5-95% non-condensing</li>
+<li class=""><strong>Vibration</strong>: Up to 10g for mobile VLA platforms</li>
+<li class=""><strong>Shock</strong>: Up to 50g for VLA transport</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enclosure-design-for-vla-systems">Enclosure Design for VLA Systems<a href="#enclosure-design-for-vla-systems" class="hash-link" aria-label="Direct link to Enclosure Design for VLA Systems" title="Direct link to Enclosure Design for VLA Systems" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="material-selection-for-vla">Material Selection for VLA<a href="#material-selection-for-vla" class="hash-link" aria-label="Direct link to Material Selection for VLA" title="Direct link to Material Selection for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Aluminum</strong>: Good thermal conductivity, EMI shielding</li>
+<li class=""><strong>Steel</strong>: Higher strength, more weight</li>
+<li class=""><strong>Plastic</strong>: Lighter, may require additional VLA cooling</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-specific-ventilation-strategy">VLA-Specific Ventilation Strategy<a href="#vla-specific-ventilation-strategy" class="hash-link" aria-label="Direct link to VLA-Specific Ventilation Strategy" title="Direct link to VLA-Specific Ventilation Strategy" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Intake/Exhaust</strong>: Controlled airflow path for VLA components</li>
+<li class=""><strong>Filtering</strong>: Dust and particle protection for VLA sensors</li>
+<li class=""><strong>EMI</strong>: Shielded ventilation paths for VLA electronics</li>
+<li class=""><strong>Maintenance</strong>: Easy access for VLA component cleaning</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-benchmarks-for-vla-hardware">Performance Benchmarks for VLA Hardware<a href="#performance-benchmarks-for-vla-hardware" class="hash-link" aria-label="Direct link to Performance Benchmarks for VLA Hardware" title="Direct link to Performance Benchmarks for VLA Hardware" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-inference-performance-for-multimodal-tasks">AI Inference Performance for Multimodal Tasks<a href="#ai-inference-performance-for-multimodal-tasks" class="hash-link" aria-label="Direct link to AI Inference Performance for Multimodal Tasks" title="Direct link to AI Inference Performance for Multimodal Tasks" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-performance-metrics">VLA Performance Metrics<a href="#vla-performance-metrics" class="hash-link" aria-label="Direct link to VLA Performance Metrics" title="Direct link to VLA Performance Metrics" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Vision Processing</strong>: 10-30 FPS for <code>640x480</code> input with detection</li>
+<li class=""><strong>Language Processing</strong>: <code>&lt;100ms</code> for command understanding</li>
+<li class=""><strong>Multimodal Fusion</strong>: <code>&lt;50ms</code> for vision-language integration</li>
+<li class=""><strong>Action Generation</strong>: <code>&lt;100ms</code> for action planning and execution</li>
+<li class=""><strong>End-to-End VLA</strong>: <code>&lt;500ms</code> for complete vision-language-action cycle</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="power-efficiency-metrics-for-vla">Power Efficiency Metrics for VLA<a href="#power-efficiency-metrics-for-vla" class="hash-link" aria-label="Direct link to Power Efficiency Metrics for VLA" title="Direct link to Power Efficiency Metrics for VLA" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>TOPS/Watt</strong>: 2-5 TOPS per watt typical for VLA workloads</li>
+<li class=""><strong>Thermal Efficiency</strong>: <code>&lt;85°C</code> under sustained VLA load</li>
+<li class=""><strong>Memory Bandwidth</strong>: 80%+ utilization target for VLA operations</li>
+<li class=""><strong>Latency</strong>: <code>&lt;500ms</code> for complete VLA pipeline</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-hardware-selection-decision-matrix">VLA Hardware Selection Decision Matrix<a href="#vla-hardware-selection-decision-matrix" class="hash-link" aria-label="Direct link to VLA Hardware Selection Decision Matrix" title="Direct link to VLA Hardware Selection Decision Matrix" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="criteria-for-platform-selection">Criteria for Platform Selection<a href="#criteria-for-platform-selection" class="hash-link" aria-label="Direct link to Criteria for Platform Selection" title="Direct link to Criteria for Platform Selection" translate="no">​</a></h3>
+<table><thead><tr><th>Factor</th><th>Weight</th><th>Orin AGX</th><th>Orin NX</th><th>Orin Nano</th></tr></thead><tbody><tr><td>VLA Performance</td><td>35%</td><td>10</td><td>7</td><td>4</td></tr><tr><td>Power Consumption</td><td>20%</td><td>5</td><td>8</td><td>10</td></tr><tr><td>Cost</td><td>15%</td><td>4</td><td>7</td><td>9</td></tr><tr><td>Memory Capacity</td><td>15%</td><td>10</td><td>8</td><td>5</td></tr><tr><td>Thermal Management</td><td>10%</td><td>6</td><td>8</td><td>10</td></tr><tr><td>VLA Ecosystem Support</td><td>5%</td><td>9</td><td>8</td><td>6</td></tr><tr><td><strong>Total Score</strong></td><td></td><td><strong>7.2</strong></td><td><strong>7.5</strong></td><td><strong>6.9</strong></td></tr></tbody></table>
+<p><em>Scores: 1=poor, 5=average, 10=excellent</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-integration-best-practices">VLA Integration Best Practices<a href="#vla-integration-best-practices" class="hash-link" aria-label="Direct link to VLA Integration Best Practices" title="Direct link to VLA Integration Best Practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="design-for-maintainability-in-vla-systems">Design for Maintainability in VLA Systems<a href="#design-for-maintainability-in-vla-systems" class="hash-link" aria-label="Direct link to Design for Maintainability in VLA Systems" title="Direct link to Design for Maintainability in VLA Systems" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Modular Design</strong>: Replaceable VLA sensor and compute modules</li>
+<li class=""><strong>Standard Interfaces</strong>: Use industry-standard connectors for VLA</li>
+<li class=""><strong>Documentation</strong>: Clear VLA cable routing and labeling</li>
+<li class=""><strong>Access</strong>: Easy access for VLA maintenance and upgrades</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="safety-considerations-for-vla-systems">Safety Considerations for VLA Systems<a href="#safety-considerations-for-vla-systems" class="hash-link" aria-label="Direct link to Safety Considerations for VLA Systems" title="Direct link to Safety Considerations for VLA Systems" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Emergency Stop</strong>: Hardware-level emergency stop circuit</li>
+<li class=""><strong>Monitoring</strong>: Real-time health monitoring of VLA critical systems</li>
+<li class=""><strong>Redundancy</strong>: Backup systems for VLA critical functions</li>
+<li class=""><strong>Fail-Safe</strong>: Safe VLA state in case of system failure</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="future-proofing-vla-considerations">Future-Proofing VLA Considerations<a href="#future-proofing-vla-considerations" class="hash-link" aria-label="Direct link to Future-Proofing VLA Considerations" title="Direct link to Future-Proofing VLA Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-upgrade-path">VLA Upgrade Path<a href="#vla-upgrade-path" class="hash-link" aria-label="Direct link to VLA Upgrade Path" title="Direct link to VLA Upgrade Path" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Compatibility</strong>: Maintain compatibility with future VLA Isaac versions</li>
+<li class=""><strong>Scalability</strong>: Design for increased VLA computational requirements</li>
+<li class=""><strong>Connectivity</strong>: Support for emerging VLA communication protocols</li>
+<li class=""><strong>Standards</strong>: Follow evolving VLA robotics and AI standards</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-technology-trends">VLA Technology Trends<a href="#vla-technology-trends" class="hash-link" aria-label="Direct link to VLA Technology Trends" title="Direct link to VLA Technology Trends" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Edge AI Evolution</strong>: Prepare for next-generation VLA AI accelerators</li>
+<li class=""><strong>5G Integration</strong>: Consider 5G for enhanced VLA connectivity</li>
+<li class=""><strong>ROS 2 Migration</strong>: Ensure VLA compatibility with ROS 2 ecosystem</li>
+<li class=""><strong>Open Standards</strong>: Support for open VLA robotics standards</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-analysis-for-vla-systems">Cost Analysis for VLA Systems<a href="#cost-analysis-for-vla-systems" class="hash-link" aria-label="Direct link to Cost Analysis for VLA Systems" title="Direct link to Cost Analysis for VLA Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="typical-vla-system-costs-usd">Typical VLA System Costs (USD)<a href="#typical-vla-system-costs-usd" class="hash-link" aria-label="Direct link to Typical VLA System Costs (USD)" title="Direct link to Typical VLA System Costs (USD)" translate="no">​</a></h3>
+<table><thead><tr><th>Configuration</th><th>Jetson</th><th>VLA Sensors</th><th>Enclosure</th><th>VLA Software</th><th>Total (Estimate)</th></tr></thead><tbody><tr><td>Basic Research VLA</td><td>$1,200</td><td>$1,200</td><td>$200</td><td>$500</td><td>$3,100</td></tr><tr><td>Advanced Research VLA</td><td>$2,000</td><td>$3,000</td><td>$400</td><td>$800</td><td>$6,200</td></tr><tr><td>Educational VLA</td><td>$800</td><td>$800</td><td>$150</td><td>$300</td><td>$2,050</td></tr><tr><td>Production Prototype VLA</td><td>$1,500</td><td>$2,000</td><td>$300</td><td>$600</td><td>$4,400</td></tr></tbody></table>
+<p><em>Note: Prices vary by region and availability</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="compliance-and-standards-for-vla-systems">Compliance and Standards for VLA Systems<a href="#compliance-and-standards-for-vla-systems" class="hash-link" aria-label="Direct link to Compliance and Standards for VLA Systems" title="Direct link to Compliance and Standards for VLA Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-safety-standards">VLA Safety Standards<a href="#vla-safety-standards" class="hash-link" aria-label="Direct link to VLA Safety Standards" title="Direct link to VLA Safety Standards" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>IEC 61508</strong>: Functional safety for VLA electrical systems</li>
+<li class=""><strong>ISO 13482</strong>: Safety requirements for VLA personal care robots</li>
+<li class=""><strong>ISO 14121</strong>: Risk assessment for VLA machinery</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="vla-regulatory-compliance">VLA Regulatory Compliance<a href="#vla-regulatory-compliance" class="hash-link" aria-label="Direct link to VLA Regulatory Compliance" title="Direct link to VLA Regulatory Compliance" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>FCC</strong>: Radio frequency compliance for VLA wireless</li>
+<li class=""><strong>CE</strong>: European conformity for VLA systems</li>
+<li class=""><strong>RoHS</strong>: Restriction of hazardous substances in VLA</li>
+<li class=""><strong>WEEE</strong>: Waste electrical and electronic equipment for VLA</li>
+</ul>
+<p>This hardware specification provides a comprehensive guide for selecting and implementing the appropriate hardware platform for Vision-Language-Action robotic systems. The specifications should be adapted based on specific VLA application requirements and constraints.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/Fatimaali424/hackathon/edit/main/website/docs/module-4/hardware.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/hackathon/docs/module-4/assignment"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Module 4 Assignment: Vision-Language-Action System Implementation</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/hackathon/docs/capstone/"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Capstone: The Autonomous Humanoid</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#primary-hardware-platform-nvidia-jetson-for-vla-systems" class="table-of-contents__link toc-highlight">Primary Hardware Platform: NVIDIA Jetson for VLA Systems</a><ul><li><a href="#jetson-orin-series-for-vla-applications" class="table-of-contents__link toc-highlight">Jetson Orin Series for VLA Applications</a></li><li><a href="#recommended-vla-configurations" class="table-of-contents__link toc-highlight">Recommended VLA Configurations</a></li></ul></li><li><a href="#vision-system-hardware-requirements" class="table-of-contents__link toc-highlight">Vision System Hardware Requirements</a><ul><li><a href="#camera-systems-for-vla" class="table-of-contents__link toc-highlight">Camera Systems for VLA</a></li><li><a href="#multi-camera-configurations" class="table-of-contents__link toc-highlight">Multi-Camera Configurations</a></li></ul></li><li><a href="#audio-hardware-for-language-processing" class="table-of-contents__link toc-highlight">Audio Hardware for Language Processing</a><ul><li><a href="#microphone-arrays-for-voice-commands" class="table-of-contents__link toc-highlight">Microphone Arrays for Voice Commands</a></li><li><a href="#speaker-systems-for-voice-output" class="table-of-contents__link toc-highlight">Speaker Systems for Voice Output</a></li></ul></li><li><a href="#compute-architecture-for-vla-workloads" class="table-of-contents__link toc-highlight">Compute Architecture for VLA Workloads</a><ul><li><a href="#gpu-acceleration-for-multimodal-processing" class="table-of-contents__link toc-highlight">GPU Acceleration for Multimodal Processing</a></li><li><a href="#memory-architecture-for-vla" class="table-of-contents__link toc-highlight">Memory Architecture for VLA</a></li></ul></li><li><a href="#vla-specific-hardware-integration" class="table-of-contents__link toc-highlight">VLA-Specific Hardware Integration</a><ul><li><a href="#multimodal-sensor-fusion-hardware" class="table-of-contents__link toc-highlight">Multimodal Sensor Fusion Hardware</a></li><li><a href="#specialized-vla-processors" class="table-of-contents__link toc-highlight">Specialized VLA Processors</a></li></ul></li><li><a href="#power-and-thermal-management-for-vla-systems" class="table-of-contents__link toc-highlight">Power and Thermal Management for VLA Systems</a><ul><li><a href="#power-requirements-for-multimodal-processing" class="table-of-contents__link toc-highlight">Power Requirements for Multimodal Processing</a></li><li><a href="#thermal-design-for-vla-applications" class="table-of-contents__link toc-highlight">Thermal Design for VLA Applications</a></li></ul></li><li><a href="#connectivity-and-io-for-vla-systems" class="table-of-contents__link toc-highlight">Connectivity and I/O for VLA Systems</a><ul><li><a href="#high-speed-interfaces-for-multimodal-data" class="table-of-contents__link toc-highlight">High-Speed Interfaces for Multimodal Data</a></li><li><a href="#wireless-connectivity-for-vla" class="table-of-contents__link toc-highlight">Wireless Connectivity for VLA</a></li></ul></li><li><a href="#vla-system-integration-guidelines" class="table-of-contents__link toc-highlight">VLA System Integration Guidelines</a><ul><li><a href="#synchronization-requirements-for-multimodal-operation" class="table-of-contents__link toc-highlight">Synchronization Requirements for Multimodal Operation</a></li><li><a href="#mounting-and-positioning-for-vla" class="table-of-contents__link toc-highlight">Mounting and Positioning for VLA</a></li></ul></li><li><a href="#environmental-considerations-for-vla-systems" class="table-of-contents__link toc-highlight">Environmental Considerations for VLA Systems</a><ul><li><a href="#operating-conditions-for-multimodal-hardware" class="table-of-contents__link toc-highlight">Operating Conditions for Multimodal Hardware</a></li><li><a href="#enclosure-design-for-vla-systems" class="table-of-contents__link toc-highlight">Enclosure Design for VLA Systems</a></li></ul></li><li><a href="#performance-benchmarks-for-vla-hardware" class="table-of-contents__link toc-highlight">Performance Benchmarks for VLA Hardware</a><ul><li><a href="#ai-inference-performance-for-multimodal-tasks" class="table-of-contents__link toc-highlight">AI Inference Performance for Multimodal Tasks</a></li></ul></li><li><a href="#vla-hardware-selection-decision-matrix" class="table-of-contents__link toc-highlight">VLA Hardware Selection Decision Matrix</a><ul><li><a href="#criteria-for-platform-selection" class="table-of-contents__link toc-highlight">Criteria for Platform Selection</a></li></ul></li><li><a href="#vla-integration-best-practices" class="table-of-contents__link toc-highlight">VLA Integration Best Practices</a><ul><li><a href="#design-for-maintainability-in-vla-systems" class="table-of-contents__link toc-highlight">Design for Maintainability in VLA Systems</a></li><li><a href="#safety-considerations-for-vla-systems" class="table-of-contents__link toc-highlight">Safety Considerations for VLA Systems</a></li></ul></li><li><a href="#future-proofing-vla-considerations" class="table-of-contents__link toc-highlight">Future-Proofing VLA Considerations</a><ul><li><a href="#vla-upgrade-path" class="table-of-contents__link toc-highlight">VLA Upgrade Path</a></li><li><a href="#vla-technology-trends" class="table-of-contents__link toc-highlight">VLA Technology Trends</a></li></ul></li><li><a href="#cost-analysis-for-vla-systems" class="table-of-contents__link toc-highlight">Cost Analysis for VLA Systems</a><ul><li><a href="#typical-vla-system-costs-usd" class="table-of-contents__link toc-highlight">Typical VLA System Costs (USD)</a></li></ul></li><li><a href="#compliance-and-standards-for-vla-systems" class="table-of-contents__link toc-highlight">Compliance and Standards for VLA Systems</a><ul><li><a href="#vla-safety-standards" class="table-of-contents__link toc-highlight">VLA Safety Standards</a></li><li><a href="#vla-regulatory-compliance" class="table-of-contents__link toc-highlight">VLA Regulatory Compliance</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/hackathon/docs/intro">Introduction</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://docs.ros.org/en/humble/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS 2 Documentation<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://nvidia-isaac-ros.github.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">NVIDIA Isaac Documentation<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Fatimaali424/hackathon" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Docusaurus<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics Book. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

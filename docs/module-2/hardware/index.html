@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-module-2/hardware" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Module 2: Hardware Specifications for Simulation | Physical AI &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://fatimaali424.github.io/hackathon/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://fatimaali424.github.io/hackathon/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://fatimaali424.github.io/hackathon/docs/module-2/hardware"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Module 2: Hardware Specifications for Simulation | Physical AI &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/hackathon/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://fatimaali424.github.io/hackathon/docs/module-2/hardware"><link data-rh="true" rel="alternate" href="https://fatimaali424.github.io/hackathon/docs/module-2/hardware" hreflang="en"><link data-rh="true" rel="alternate" href="https://fatimaali424.github.io/hackathon/docs/module-2/hardware" hreflang="x-default"><link rel="stylesheet" href="/hackathon/assets/css/styles.67674623.css">
+<script src="/hackathon/assets/js/runtime~main.a07413b9.js" defer="defer"></script>
+<script src="/hackathon/assets/js/main.a4d761ad.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/hackathon/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/hackathon/"><div class="navbar__logo"><img src="/hackathon/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/hackathon/img/logo.svg" alt="Physical AI &amp; Humanoid Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Physical AI &amp; Humanoid Robotics</b></a><a class="navbar__item navbar__link" href="/hackathon/docs/intro">Book Chapters</a><a class="navbar__item navbar__link" href="/hackathon/docs/intro">Quick Start</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Fatimaali424/hackathon" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/Fatimaali424/hackathon/issues" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Issues<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Module 2: Hardware Specifications for Simulation</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>This document outlines the hardware requirements and specifications needed for implementing the simulation environments covered in Module 2. Proper hardware selection is critical for achieving realistic simulation performance and ensuring smooth sim-to-real transfer.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="minimum-hardware-requirements">Minimum Hardware Requirements<a href="#minimum-hardware-requirements" class="hash-link" aria-label="Direct link to Minimum Hardware Requirements" title="Direct link to Minimum Hardware Requirements" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cpu">CPU<a href="#cpu" class="hash-link" aria-label="Direct link to CPU" title="Direct link to CPU" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Minimum</strong>: Intel i5 / AMD Ryzen 5 or equivalent</li>
+<li class=""><strong>Recommended</strong>: Intel i7 / AMD Ryzen 7 or better</li>
+<li class=""><strong>Cores</strong>: 8+ cores recommended for parallel simulation processing</li>
+<li class=""><strong>Threads</strong>: 16+ threads for optimal performance</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gpu">GPU<a href="#gpu" class="hash-link" aria-label="Direct link to GPU" title="Direct link to GPU" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Minimum</strong>: NVIDIA GTX 1060 6GB or AMD equivalent</li>
+<li class=""><strong>Recommended</strong>: NVIDIA RTX 3060 8GB or better</li>
+<li class=""><strong>Preferred</strong>: NVIDIA RTX 4080 / RTX 4090 for advanced physics simulation</li>
+<li class=""><strong>VRAM</strong>: 8GB+ minimum, 16GB+ recommended for complex scenes</li>
+<li class=""><strong>CUDA Support</strong>: Required for NVIDIA Isaac Sim integration</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ram">RAM<a href="#ram" class="hash-link" aria-label="Direct link to RAM" title="Direct link to RAM" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Minimum</strong>: 16GB DDR4</li>
+<li class=""><strong>Recommended</strong>: 32GB DDR4 or higher</li>
+<li class=""><strong>ECC Memory</strong>: Recommended for production simulation environments</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="storage">Storage<a href="#storage" class="hash-link" aria-label="Direct link to Storage" title="Direct link to Storage" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Minimum</strong>: 100GB SSD</li>
+<li class=""><strong>Recommended</strong>: 500GB+ NVMe SSD for simulation assets</li>
+<li class=""><strong>Type</strong>: NVMe preferred for high-speed asset loading</li>
+<li class=""><strong>Secondary</strong>: Additional storage for simulation recordings and datasets</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operating-system">Operating System<a href="#operating-system" class="hash-link" aria-label="Direct link to Operating System" title="Direct link to Operating System" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Primary</strong>: Ubuntu 22.04 LTS (recommended for Gazebo)</li>
+<li class=""><strong>Alternative</strong>: Windows 10/11 (for Unity development)</li>
+<li class=""><strong>Docker</strong>: Support for containerized simulation environments</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-benchmarks">Performance Benchmarks<a href="#performance-benchmarks" class="hash-link" aria-label="Direct link to Performance Benchmarks" title="Direct link to Performance Benchmarks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gazebo-simulation">Gazebo Simulation<a href="#gazebo-simulation" class="hash-link" aria-label="Direct link to Gazebo Simulation" title="Direct link to Gazebo Simulation" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Simple environments</strong>: RTX 3060 can handle 100+ Hz simulation rates</li>
+<li class=""><strong>Complex environments</strong>: RTX 4080+ recommended for real-time performance</li>
+<li class=""><strong>Physics fidelity</strong>: Higher-end GPUs support more complex physics calculations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unity-integration">Unity Integration<a href="#unity-integration" class="hash-link" aria-label="Direct link to Unity Integration" title="Direct link to Unity Integration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Visual rendering</strong>: RTX series recommended for ray tracing and advanced lighting</li>
+<li class=""><strong>Real-time interaction</strong>: 144Hz+ displays supported with appropriate GPU</li>
+<li class=""><strong>Multi-scene management</strong>: 32GB+ RAM recommended for complex scenes</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-requirements">Network Requirements<a href="#network-requirements" class="hash-link" aria-label="Direct link to Network Requirements" title="Direct link to Network Requirements" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Simulation streaming</strong>: 1 Gbps network recommended for distributed simulation</li>
+<li class=""><strong>Real-time control</strong>: Low latency (<code>&lt;10ms</code>) for sim-to-real transfer</li>
+<li class=""><strong>Data transfer</strong>: High bandwidth for sensor data streaming</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-configurations">Recommended Configurations<a href="#recommended-configurations" class="hash-link" aria-label="Direct link to Recommended Configurations" title="Direct link to Recommended Configurations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="academicresearch-setup">Academic/Research Setup<a href="#academicresearch-setup" class="hash-link" aria-label="Direct link to Academic/Research Setup" title="Direct link to Academic/Research Setup" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>CPU</strong>: AMD Ryzen 9 7950X or Intel i9-13900K</li>
+<li class=""><strong>GPU</strong>: NVIDIA RTX 4080 16GB or RTX 4090 24GB</li>
+<li class=""><strong>RAM</strong>: 64GB DDR5</li>
+<li class=""><strong>Storage</strong>: 1TB+ NVMe SSD + 2TB+ secondary storage</li>
+<li class=""><strong>Use case</strong>: Advanced research, complex multi-robot simulations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="educational-setup">Educational Setup<a href="#educational-setup" class="hash-link" aria-label="Direct link to Educational Setup" title="Direct link to Educational Setup" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>CPU</strong>: AMD Ryzen 7 5800X or Intel i7-12700K</li>
+<li class=""><strong>GPU</strong>: NVIDIA RTX 4070 12GB or RTX 4080 16GB</li>
+<li class=""><strong>RAM</strong>: 32GB DDR4</li>
+<li class=""><strong>Storage</strong>: 500GB+ NVMe SSD</li>
+<li class=""><strong>Use case</strong>: Coursework, lab exercises, student projects</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="budget-setup">Budget Setup<a href="#budget-setup" class="hash-link" aria-label="Direct link to Budget Setup" title="Direct link to Budget Setup" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>CPU</strong>: AMD Ryzen 5 5600X or Intel i5-12400F</li>
+<li class=""><strong>GPU</strong>: NVIDIA RTX 3060 12GB or RTX 4060 8GB</li>
+<li class=""><strong>RAM</strong>: 16GB DDR4</li>
+<li class=""><strong>Storage</strong>: 250GB+ NVMe SSD</li>
+<li class=""><strong>Use case</strong>: Individual learning, basic simulation tasks</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="compatibility-considerations">Compatibility Considerations<a href="#compatibility-considerations" class="hash-link" aria-label="Direct link to Compatibility Considerations" title="Direct link to Compatibility Considerations" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ros-2-integration">ROS 2 Integration<a href="#ros-2-integration" class="hash-link" aria-label="Direct link to ROS 2 Integration" title="Direct link to ROS 2 Integration" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Middleware</strong>: Fast DDS or Cyclone DDS for optimal performance</li>
+<li class=""><strong>Communication</strong>: Direct GPU-to-GPU communication when available</li>
+<li class=""><strong>Real-time</strong>: Consider PREEMPT_RT kernel for real-time simulation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="isaac-sim-requirements">Isaac Sim Requirements<a href="#isaac-sim-requirements" class="hash-link" aria-label="Direct link to Isaac Sim Requirements" title="Direct link to Isaac Sim Requirements" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>GPU</strong>: NVIDIA RTX series with CUDA 11.8+ support</li>
+<li class=""><strong>RAM</strong>: Additional memory for AI model loading during simulation</li>
+<li class=""><strong>Storage</strong>: Space for Isaac Sim assets and models</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unity-requirements">Unity Requirements<a href="#unity-requirements" class="hash-link" aria-label="Direct link to Unity Requirements" title="Direct link to Unity Requirements" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Graphics API</strong>: DirectX 12 or Vulkan for optimal performance</li>
+<li class=""><strong>VR Support</strong>: Optional VR headsets for immersive simulation experience</li>
+<li class=""><strong>Build targets</strong>: Support for multiple platforms (Windows, Linux, WebGL)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-estimation">Cost Estimation<a href="#cost-estimation" class="hash-link" aria-label="Direct link to Cost Estimation" title="Direct link to Cost Estimation" translate="no">​</a></h2>
+<table><thead><tr><th>Configuration</th><th>Estimated Cost</th><th>Use Case</th></tr></thead><tbody><tr><td>Budget Setup</td><td>$1,500-$2,500</td><td>Individual students, basic projects</td></tr><tr><td>Educational Setup</td><td>$3,000-$5,000</td><td>University labs, small research groups</td></tr><tr><td>Academic/Research Setup</td><td>$6,000-$10,000+</td><td>Advanced research, complex simulations</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="upgrade-path-considerations">Upgrade Path Considerations<a href="#upgrade-path-considerations" class="hash-link" aria-label="Direct link to Upgrade Path Considerations" title="Direct link to Upgrade Path Considerations" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>GPU</strong>: Most critical upgrade for simulation performance</li>
+<li class=""><strong>RAM</strong>: Second most important for complex multi-scene simulations</li>
+<li class=""><strong>CPU</strong>: Important for physics calculations and AI inference</li>
+<li class=""><strong>Storage</strong>: Consider for large simulation dataset management</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="troubleshooting-common-issues">Troubleshooting Common Issues<a href="#troubleshooting-common-issues" class="hash-link" aria-label="Direct link to Troubleshooting Common Issues" title="Direct link to Troubleshooting Common Issues" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="performance-issues">Performance Issues<a href="#performance-issues" class="hash-link" aria-label="Direct link to Performance Issues" title="Direct link to Performance Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Low FPS</strong>: Check GPU utilization and VRAM usage</li>
+<li class=""><strong>Simulation lag</strong>: Verify CPU core allocation and thermal throttling</li>
+<li class=""><strong>Memory errors</strong>: Monitor RAM usage during complex simulations</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="compatibility-issues">Compatibility Issues<a href="#compatibility-issues" class="hash-link" aria-label="Direct link to Compatibility Issues" title="Direct link to Compatibility Issues" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Driver conflicts</strong>: Use recommended driver versions for simulation software</li>
+<li class=""><strong>Library conflicts</strong>: Isolate simulation environments using containers</li>
+<li class=""><strong>Version mismatches</strong>: Maintain consistent ROS 2 and simulation tool versions</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="future-proofing">Future-Proofing<a href="#future-proofing" class="hash-link" aria-label="Direct link to Future-Proofing" title="Direct link to Future-Proofing" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>AI Integration</strong>: Plan for increased GPU requirements with AI model integration</li>
+<li class=""><strong>Multi-robot Simulation</strong>: Consider additional CPU and GPU resources</li>
+<li class=""><strong>Advanced Physics</strong>: Plan for more complex physics simulation requirements</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/Fatimaali424/hackathon/edit/main/website/docs/module-2/hardware.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#minimum-hardware-requirements" class="table-of-contents__link toc-highlight">Minimum Hardware Requirements</a><ul><li><a href="#cpu" class="table-of-contents__link toc-highlight">CPU</a></li><li><a href="#gpu" class="table-of-contents__link toc-highlight">GPU</a></li><li><a href="#ram" class="table-of-contents__link toc-highlight">RAM</a></li><li><a href="#storage" class="table-of-contents__link toc-highlight">Storage</a></li><li><a href="#operating-system" class="table-of-contents__link toc-highlight">Operating System</a></li></ul></li><li><a href="#performance-benchmarks" class="table-of-contents__link toc-highlight">Performance Benchmarks</a><ul><li><a href="#gazebo-simulation" class="table-of-contents__link toc-highlight">Gazebo Simulation</a></li><li><a href="#unity-integration" class="table-of-contents__link toc-highlight">Unity Integration</a></li><li><a href="#network-requirements" class="table-of-contents__link toc-highlight">Network Requirements</a></li></ul></li><li><a href="#recommended-configurations" class="table-of-contents__link toc-highlight">Recommended Configurations</a><ul><li><a href="#academicresearch-setup" class="table-of-contents__link toc-highlight">Academic/Research Setup</a></li><li><a href="#educational-setup" class="table-of-contents__link toc-highlight">Educational Setup</a></li><li><a href="#budget-setup" class="table-of-contents__link toc-highlight">Budget Setup</a></li></ul></li><li><a href="#compatibility-considerations" class="table-of-contents__link toc-highlight">Compatibility Considerations</a><ul><li><a href="#ros-2-integration" class="table-of-contents__link toc-highlight">ROS 2 Integration</a></li><li><a href="#isaac-sim-requirements" class="table-of-contents__link toc-highlight">Isaac Sim Requirements</a></li><li><a href="#unity-requirements" class="table-of-contents__link toc-highlight">Unity Requirements</a></li></ul></li><li><a href="#cost-estimation" class="table-of-contents__link toc-highlight">Cost Estimation</a></li><li><a href="#upgrade-path-considerations" class="table-of-contents__link toc-highlight">Upgrade Path Considerations</a></li><li><a href="#troubleshooting-common-issues" class="table-of-contents__link toc-highlight">Troubleshooting Common Issues</a><ul><li><a href="#performance-issues" class="table-of-contents__link toc-highlight">Performance Issues</a></li><li><a href="#compatibility-issues" class="table-of-contents__link toc-highlight">Compatibility Issues</a></li></ul></li><li><a href="#future-proofing" class="table-of-contents__link toc-highlight">Future-Proofing</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Content</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/hackathon/docs/intro">Introduction</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://docs.ros.org/en/humble/" target="_blank" rel="noopener noreferrer" class="footer__link-item">ROS 2 Documentation<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://nvidia-isaac-ros.github.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">NVIDIA Isaac Documentation<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Fatimaali424/hackathon" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Docusaurus<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Physical AI & Humanoid Robotics Book. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
