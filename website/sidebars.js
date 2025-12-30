@@ -98,7 +98,6 @@ const sidebars = {
         },
         'module-3/assignment',
         'module-3/hardware',
-        'module-3/learning-outcomes',
       ],
     },
     {
@@ -124,7 +123,6 @@ const sidebars = {
         },
         'module-4/assignment',
         'module-4/hardware',
-        'module-4/learning-outcomes',
       ],
     },
     {
@@ -152,7 +150,6 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items: [
-        'references',
         'weekly-roadmap',
         'educator-guide',
       ],

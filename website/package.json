@@ -10,12 +10,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "translate": "node scripts/advanced-translate-book.js",
-    "translate:es": "node scripts/advanced-translate-book.js es",
-    "translate:fr": "node scripts/advanced-translate-book.js fr",
-    "translate:de": "node scripts/advanced-translate-book.js de"
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
